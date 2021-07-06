@@ -14,7 +14,7 @@ var tasksToDoEl = document.querySelector("#tasks-to-do");
         return false;
           }
     formEl.reset(); 
-    
+
     // package up data as an object
     var taskDataObj = {
     name: taskNameInput,
@@ -41,7 +41,8 @@ var tasksToDoEl = document.querySelector("#tasks-to-do");
      tasksToDoEl.appendChild(listItemEl);
 
    };
-   
+   //////
+   ////
    
 formEl.addEventListener("submit", taskFormHandler);
 
