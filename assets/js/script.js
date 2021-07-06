@@ -6,6 +6,7 @@ var tasksToDoEl = document.querySelector("#tasks-to-do");
 
        var taskNameInput = document.querySelector("input[name='task-name']").value;
        var taskTypeInput = document.querySelector("select[name='task-type']").value;
+      
        
        // create list item
        var listItemEl = document.createElement("li");
@@ -17,28 +18,11 @@ var tasksToDoEl = document.querySelector("#tasks-to-do");
       taskInfoEl.className = "task-info";
       // add HTML content to div
       taskInfoEl.innerHTML = "<h3 class='task-name'>" + taskNameInput + "</h3><span class='task-type'>" + taskTypeInput + "</span>";
-
       listItemEl.appendChild(taskInfoEl);
 
       // add entire list item to list
       tasksToDoEl.appendChild(listItemEl);  
-       
-       
-       
-       
-       
-
-
-       // Create a new task item.
-       var listItemEl = document.createElement("li");
-       // Style the new task item.
-       listItemEl.className = "task-item";
-       // Add the text.
-       listItemEl.textContent = taskNameInput;
-       // Append this element to the task list.
-       tasksToDoEl.appendChild(listItemEl);
-      
-    };
-
+    };  
+     
 formEl.addEventListener("submit", createTaskHandler);
 
